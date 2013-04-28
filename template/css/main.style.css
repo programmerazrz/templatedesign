@@ -1,0 +1,55 @@
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("images/project-icons-sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 26px;
+    width: 26px;
+}
+
+b.icon-user-info-login {
+    background-position: 0 -65px;
+}
+
+b.icon-user-info-data {
+    background-position: 0 -131px;
+}
+
+b.icon-user-info-notification {
+    background-position: 0 0;
+}
+
+b.icon-user-info-home {
+    background-position: 0 -33px;
+}
+
+div#header div.header-container {
+    background: none repeat scroll 0 0 #58AB7B;
+    height: 91px;
+    width: 100%;
+}
+
+div#header div.header-container div.user-control-container {
+    float: left;
+    height: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+div#header div.header-container div.user-control-container button.user-info:hover {
+    background: #FFFFFF;
+    box-shadow: 0 3px 5px #222222;
+    -moz-box-shadow: 0 3px 5px #222222;
+    -webkit-box-shadow: 0 3px 5px #222222;
+    -o-box-shadow: 0 3px 5px #222222;
+}
+
+div#header div.header-container div.user-control-container button.user-info {
+    background-color: rgba(255, 255, 255, 0.28);
+    border: 0 none;
+    transition: background 0.2s ease-in 0s;
+    -moz-transition: background 0.2s ease-in 0s;
+    -o-transition: background 0.2s ease-in 0s;
+    -webkit-transition: background 0.2s ease-in 0s;
+    margin: 15px 0 2px 0;
+    padding: 4px;
+}

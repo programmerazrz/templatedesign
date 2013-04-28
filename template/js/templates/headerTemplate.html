@@ -1,0 +1,40 @@
+<div class="header-container">
+    <div class="user-control-container">
+        <button class="user-info user-info-login" rel="js/templates/loginTemplate.html"><b class="icon-user-info-login"></b></button>
+        <button class="user-info user-info-home" title="hello"><b class="icon-user-info-home"></b></button>
+        <button class="user-info user-info-data" title="hello"><b class="icon-user-info-data"></b></button>
+        <button class="user-info user-info-notification" title="hello"><b class="icon-user-info-notification"></b></button>
+    </div>
+    <script type="text/javascript">
+        $("button.user-info-login").each(function()
+        {
+            $(this).qtip(
+                    {
+                        content: {
+                            text: '<img class="throbber" src="css/images/throbber.gif" alt="Loading..." />',
+                            ajax: {
+                                url: $(this).attr('rel') // Use the rel attribute of each element for the url to load
+                            },
+                            title: {
+                                text: 'User Login - ' + $(this).text(), // Give the tooltip a title using each elements text
+                                button: true
+                            }
+                        },
+                        position: {
+                            at: 'bottom center', // Position the tooltip above the link
+                            my: 'top center',
+                            viewport: $(window), // Keep the tooltip on-screen at all times
+                            effect: false // Disable positioning animation
+                        },
+                        show: {
+                            event: 'click',
+                            solo: true // Only show one tooltip at a time
+                        },
+                        hide: 'unfocus',
+                        style: {
+                            classes: 'qtip-wiki qtip-light qtip-shadow'
+                        }
+                    })
+        })
+    </script>
+</div>
