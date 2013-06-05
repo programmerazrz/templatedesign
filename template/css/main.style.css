@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'BKoodakBold';
+    src: url('fonts/BKoodakBold.eot?#') format('eot'), url('fonts/BKoodakBold.woff') format('woff'), url('fonts/BKoodakBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'isiranbtitrmatn';
+    src: url('fonts/BTitrBold.eot?#') format('eot'), url('fonts/BTitrBold.woff') format('woff'), url('fonts/BTitrBold.ttf') format('truetype');
+}
+
+* {
+    font: 12px normal, BkoodakBold, tahoma, sans-serif;
+}
+
+body {
+    background: none repeat scroll 0 0 #DAF2DB;
+}
+
 [class^="icon-"], [class*=" icon-"] {
     background-image: url("images/project-icons-sprite.png");
     background-repeat: no-repeat;
@@ -18,6 +36,26 @@ b.icon-user-info-notification {
     background-position: 0 0;
 }
 
+b.icon-user-info-notification span.notification-counter-container {
+    background: none repeat scroll 0 0 #DC220D;
+    border-radius: 20% 20% 20% 20%;
+    display: block;
+    height: 19px;
+    position: relative;
+    right: -16px;
+    top: -14px;
+    width: 19px;
+}
+
+b.icon-user-info-notification span.notification-counter-container i.notification-counter-counter {
+    color: #FFFFFF;
+    float: right;
+    font-size: 14px;
+    left: -6px;
+    position: relative;
+    top: 0;
+}
+
 b.icon-user-info-home {
     background-position: 0 -33px;
 }
@@ -25,6 +63,7 @@ b.icon-user-info-home {
 div#header div.header-container {
     background: none repeat scroll 0 0 #58AB7B;
     height: 91px;
+    box-shadow: 0 3px 2px #156217;
     width: 100%;
 }
 
@@ -36,20 +75,59 @@ div#header div.header-container div.user-control-container {
 }
 
 div#header div.header-container div.user-control-container button.user-info:hover {
-    background: #FFFFFF;
+    background: none repeat scroll 0 0 #FFFFFF;
     box-shadow: 0 3px 5px #222222;
-    -moz-box-shadow: 0 3px 5px #222222;
-    -webkit-box-shadow: 0 3px 5px #222222;
-    -o-box-shadow: 0 3px 5px #222222;
 }
 
 div#header div.header-container div.user-control-container button.user-info {
     background-color: rgba(255, 255, 255, 0.28);
     border: 0 none;
-    transition: background 0.2s ease-in 0s;
-    -moz-transition: background 0.2s ease-in 0s;
-    -o-transition: background 0.2s ease-in 0s;
-    -webkit-transition: background 0.2s ease-in 0s;
-    margin: 15px 0 2px 0;
+    margin: 15px 0 2px;
     padding: 4px;
+    transition: background 0.2s ease-in 0s;
 }
+
+/*Login Design*/
+div.login-container p {
+    float: right;
+    margin: 4px 0 4px 4px;
+}
+
+div.login-container label {
+    direction: rtl;
+    display: block;
+    float: right;
+    min-width: 50px;
+    padding: 6px;
+    width: auto;
+}
+
+div.login-container span.login-button-puller {
+    display: block;
+    float: right;
+    min-width: 58px;
+}
+
+div.login-container input[type="text"], div.login-container input[type="password"] {
+    padding: 4px;
+    width: 135px;
+}
+
+div.login-container input[type="text"], div.login-container input[type="password"] {
+    background: none repeat scroll 0 0 #F8FBF9;
+    border: 1px solid #7E7878;
+    border-radius: 2px 2px 2px 2px;
+    padding: 7px;
+    width: 155px;
+    -moz-transition: box-shadow 0.1s linear 0s;
+}
+
+div.login-container input[type="text"]:hover, div.login-container input[type="password"]:hover {
+    border-color: #181818;
+}
+
+div.login-container input[type="text"]:focus, div.login-container input[type="password"]:focus {
+    box-shadow: 0 0 6px #55B470, 1px 1px 0 #E3E3E3 inset;
+    border-color: #4D913B;
+}
+

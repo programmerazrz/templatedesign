@@ -1,4 +1,9 @@
+var texts = {
+    Username:"نام کاربری",
+    Password:"کلمه عبور",
+    Login:"ورود"
 
+};
 (function () {
     //*******************template Loader*************************//
     function templateLoader(Object, address) {

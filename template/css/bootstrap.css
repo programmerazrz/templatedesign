@@ -6,21 +6,21 @@ button.common-button, input.common-button[type="button"] {
     border-width: 1px;
     box-shadow: 0 1px 0 #DDDDDD, 0 1px 0 rgba(255, 255, 255, 0.2) inset;
     color: #FFFFFF;
-    font: 12px normal,Helvetica,sans-serif;
-    height: 25px;
+    font-size: 13px;
+    height: 27px;
     margin: 5px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-    width: 65px;
+    width: 85px;
 }
-button.common-button:hover, input[type="button"].common-button:hover {
-    background: linear-gradient(to bottom, #3BAAF4 0%, #2389DC 100%) repeat scroll 0 0 transparent;
-    border-color: #2C8ED1 #1C74B3 #0D5B97;
+button.common-button:hover, input.common-button[type="button"]:hover {
+    background: linear-gradient(to bottom, #44B360 0%, #369D4A 100%) repeat scroll 0 0 transparent;
+    border-color: #18B162 #079C4F #0B8144;
     border-style: solid;
     border-width: 1px;
 }
-button.common-button:active, input[type="button"].common-button:active {
-    background: linear-gradient(to bottom, #37A3EB 0%, #2181CF 100%) repeat scroll 0 0 transparent;
-    border-color: #1C74B3 #1C74B3 #0D5B97;
+button.common-button:active, input.common-button[type="button"]:active {
+    background: linear-gradient(to bottom, #68C971 0%, #47A950 100%) repeat scroll 0 0 transparent;
+    border-color: #1CB360 #1DAE5F #0B8743 ;
     border-style: solid;
     border-width: 1px;
     box-shadow: 0 1px 0 #FFFFFF, 0 1px 3px rgba(101, 101, 101, 0.3) inset;

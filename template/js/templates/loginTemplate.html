@@ -1,14 +1,22 @@
-<div>
+<div class="login-container">
     <p>
-        <label for="username">Username</label>
+        <label for="username" data-prop-text="Username"></label>
         <input type="text" class="user-login-entry username" id="username">
     </p>
 
     <p>
-        <label for="password">Password</label>
+        <label for="password" data-prop-text="Password"></label>
         <input type="password" class="user-login-entry password" id="password">
     </p>
     <p>
-    <button class="common-button">Login</button>
+        <span class="login-button-puller"></span>
+    <button class="common-button" data-prop-text="Login"></button>
     </p>
+    <script type="text/javascript">
+
+        $(".login-container *").each(function(){
+            var textInside = $(this).attr("data-prop-text");
+            $(this).text(texts[textInside])
+        });
+    </script>
 </div>
