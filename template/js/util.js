@@ -1,7 +1,18 @@
 var texts = {
+    UsersLogin : "ورود کاربران",
     Username:"نام کاربری",
     Password:"کلمه عبور",
-    Login:"ورود"
+    Login: "ورود",
+    Home : "خانه",
+    Cartable:"کارتابل فنی",
+    Storage:"انبار",
+    PM:"PM",
+    Request:"کارتابل درخواست",
+    ProductImport:"تامین کالا",
+    ProductExport:"خروج کالا",
+    ReportExport:"گزارش خروج",
+    PmSubmit:"ثبت PM"
+
 
 };
 (function () {

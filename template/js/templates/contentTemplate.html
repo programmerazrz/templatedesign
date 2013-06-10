@@ -1,2 +1,43 @@
-<div>
+﻿<div id="dc_jqmegamenu_widget-5-item">
+    <ul class="menu">
+        <li class="width-fixer"><a href="#" data-prop-text="Home"></a></li>
+        <li class="width-fixer"><a href="#" data-prop-text="Cartable"></a>
+            <ul>
+                <li><a href="#" data-prop-text="Request"></a></li>
+            </ul>
+        </li>
+        <li class="width-fixer"><a href="#" data-prop-text="Storage"></a>
+            <ul>
+                <li><a href="#" data-prop-text="ProductExport"></a>
+                    <ul>
+                        <li><a href="#" data-prop-text="ReportExport"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-prop-text="ProductImport"></a></li>
+            </ul>
+        </li>
+        <li class="width-fixer"><a href="#" data-prop-text="PM"></a>
+            <ul>
+                <li><a href="#" data-prop-text="PmSubmit"></a></li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".menu *").each(function () {
+                var textInside = $(this).attr("data-prop-text");
+                $(this).text(texts[textInside])
+            });
+
+            jQuery('.menu').dcMegaMenu({
+                rowItems: 3,
+                subMenuWidth: '175',
+                speed: 'fast',
+                effect: 'fade',
+                event: 'hover'
+            });
+
+
+        }); 
+    </script>
 </div>

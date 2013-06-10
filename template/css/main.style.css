@@ -2,10 +2,9 @@
     font-family: 'BKoodakBold';
     src: url('fonts/BKoodakBold.eot?#') format('eot'), url('fonts/BKoodakBold.woff') format('woff'), url('fonts/BKoodakBold.ttf') format('truetype');
 }
-
 @font-face {
-    font-family: 'isiranbtitrmatn';
-    src: url('fonts/BTitrBold.eot?#') format('eot'), url('fonts/BTitrBold.woff') format('woff'), url('fonts/BTitrBold.ttf') format('truetype');
+    font-family: 'BYekan';
+    src: url('fonts/BYekan.eot?#') format('eot'), url('fonts/BYekan.woff') format('woff'), url('fonts/BYekan.ttf') format('truetype');
 }
 
 * {
@@ -13,7 +12,7 @@
 }
 
 body {
-    background: none repeat scroll 0 0 #DAF2DB;
+    background: url("images/bg-noise.png?") repeat scroll 0 0 #DAF2DB;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -62,9 +61,11 @@ b.icon-user-info-home {
 
 div#header div.header-container {
     background: none repeat scroll 0 0 #58AB7B;
+    box-shadow: 0 1px 4px #181818;
     height: 91px;
-    box-shadow: 0 3px 2px #156217;
+    position: relative;
     width: 100%;
+    z-index: 2;
 }
 
 div#header div.header-container div.user-control-container {
