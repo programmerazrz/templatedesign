@@ -8,15 +8,12 @@
         <label for="password" data-prop-text="Password"></label>
         <input type="password" class="user-login-entry password" id="password">
     </p>
+
     <p>
         <span class="login-button-puller"></span>
-    <button class="common-button" data-prop-text="Login"></button>
+        <button class="common-button" data-prop-text="Login"></button>
     </p>
     <script type="text/javascript">
-
-        $(".login-container *").each(function(){
-            var textInside = $(this).attr("data-prop-text");
-            $(this).text(texts[textInside])
-        });
+        textIntializer($(".login-container *"))
     </script>
 </div>

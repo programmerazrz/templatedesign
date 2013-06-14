@@ -24,18 +24,17 @@
     </ul>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
-            $(".menu *").each(function () {
-                var textInside = $(this).attr("data-prop-text");
-                $(this).text(texts[textInside])
-            });
+           textIntializer( $(".menu *"));
+            setTimeout(function(){
+                jQuery('.menu').dcMegaMenu({
+                    rowItems: 3,
+                    subMenuWidth: '175',
+                    speed: 'fast',
+                    effect: 'fade',
+                    event: 'hover'
+                });
+            },10)
 
-            jQuery('.menu').dcMegaMenu({
-                rowItems: 3,
-                subMenuWidth: '175',
-                speed: 'fast',
-                effect: 'fade',
-                event: 'hover'
-            });
 
 
         }); 

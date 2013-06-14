@@ -10,6 +10,7 @@
 }
 #dc_jqmegamenu_widget-5-item ul.menu {
     background: none repeat scroll 0 0 #B1DAB5;
+    border-bottom: 1px solid #EEEEEE;
     height: 45px;
     position: relative;
     width: 100%;
@@ -51,7 +52,6 @@
 #dc_jqmegamenu_widget-5-item ul li.mega-hover a, #dc_jqmegamenu_widget-5-item ul li a:hover {
     background-position: 100% -40px;
     color: #275216;
-    text-shadow: none;
     text-shadow: 0 0 2px #BAC4BC;
 }
 #dc_jqmegamenu_widget-5-item ul li.mega-hover a .dc-mega-icon {
