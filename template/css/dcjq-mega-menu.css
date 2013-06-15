@@ -3,3 +3,19 @@
 .dcjq-mega-menu ul li ul {display: none;}
 .dcjq-mega-menu .sub {display: none;}
 .dcjq-mega-menu .sub ul {display: block;}
+.highlighter {
+    height: 4px;
+    width: 100%;
+}
+.highlighter.blue {
+    background: none repeat scroll 0 0 #1da4ba;
+}
+.highlighter.black {
+    background: none repeat scroll 0 0 #626262;
+}
+.highlighter.red {
+    background: none repeat scroll 0 0 #BA3030;
+}
+.highlighter.orange {
+    background: none repeat scroll 0 0 #FFC200;
+}
