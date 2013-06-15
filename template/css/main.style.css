@@ -13,6 +13,7 @@
 
 body {
     background: url("images/bg-noise.png?") repeat scroll 0 0 #DAF2DB;
+    min-width: 600px;
 }
 body, html {
     height: 100%;
@@ -70,7 +71,6 @@ b.icon-user-info-home {
 
 div#header div.header-container {
     background: none repeat scroll 0 0 #58AB7B;
-    box-shadow: 0 1px 4px #181818;
     height: 91px;
     position: relative;
     width: 100%;
@@ -99,27 +99,22 @@ div#header div.header-container div.user-control-container button.user-info {
 /*Footer Design*/
 
 div#footer {
-    background: none repeat scroll 0 0 rgba(187, 232, 164, 0.88);
-    border-top: 1px solid #85C25B;
-    box-shadow: 0 1px 2px #F4F4F4 inset;
-    height: 70px;
-}
-div#footer {
-    background: none repeat scroll 0 0 rgba(187, 232, 164, 0.88);
-    border-top: 1px solid #85C25B;
-    box-shadow: 0 1px 2px #F4F4F4 inset;
+    background: none repeat scroll 0 0 #747474;
     height: 70px;
 }
 div#footer div.footer-container div.footer-content-wrapper {
-    margin: 0 auto;
-    width: 206px;
     display: block;
 }
 div#footer div.footer-container div.footer-content-wrapper span {
-    color: #424843;
-    text-shadow: 1px 1px 0 #EBEBEB;
+    color: #FCFFFD;
+    display: block;
+    float: right;
+    font-family: BYekan;
+    font-size: 34px;
+    padding: 7px;
     position: relative;
-    top: 20px;
+    text-shadow: 1px 1px 0 #000000;
+    top: 2px;
 }
 /*Login Design*/
 div.login-container p {
@@ -164,4 +159,5 @@ div.login-container input[type="text"]:focus, div.login-container input[type="pa
     box-shadow: 0 0 6px #55B470, 1px 1px 0 #E3E3E3 inset;
     border-color: #4D913B;
 }
+
 
