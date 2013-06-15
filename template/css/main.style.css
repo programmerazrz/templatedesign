@@ -36,10 +36,12 @@ b.icon-user-info-login {
     background-position: 0 -65px;
 }
 
-b.icon-user-info-data {
-    background-position: 0 -131px;
+b.icon-user-info-home {
+    background-position: 0 -33px;
 }
-
+b.icon-user-info-setting {
+    background-position: -2px -163px;
+}
 b.icon-user-info-notification {
     background-position: 0 0;
 }
@@ -64,9 +66,7 @@ b.icon-user-info-notification span.notification-counter-container i.notification
     top: 0;
 }
 
-b.icon-user-info-home {
-    background-position: 0 -33px;
-}
+
 
 div#header div.header-container {
     background: none repeat scroll 0 0 #58AB7B;

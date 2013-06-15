@@ -1,15 +1,21 @@
 <div class="header-container">
     <div class="user-control-container">
-        <button class="user-info user-info-login" rel="js/templates/loginTemplate.html"><b
-                class="icon-user-info-login"></b></button>
-        <button class="user-info user-info-home" title="hello"><b class="icon-user-info-home"></b></button>
-        <button class="user-info user-info-data" title="hello"><b class="icon-user-info-data"></b></button>
-        <button class="user-info user-info-notification" title="hello"><b class="icon-user-info-notification">
-            <span class="notification-counter-container"><i class="notification-counter-counter">4</i></span>
-        </b></button>
+        <button class="user-info has-template user-info-login" rel="js/templates/loginTemplate.html">
+            <b class="icon-user-info-login"></b>
+        </button>
+        <button class="user-info user-info-home" title="hello">
+            <b class="icon-user-info-home"></b>
+        </button>
+        <button class="user-info has-template user-info-setting" rel="js/templates/settingTemplate.html">
+            <b class="icon-user-info-setting"></b>
+        </button>
+        <button class="user-info user-info-notification" title="hello">
+            <b class="icon-user-info-notification"><span class="notification-counter-container">
+                <i class="notification-counter-counter">4</i></span> </b>
+        </button>
     </div>
     <script type="text/javascript">
-        $("button.user-info-login").each(function () {
+        $("button.user-info.has-template").each(function () {
             $(this).qtip(
                     {
                         content: {
