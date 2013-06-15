@@ -47,17 +47,18 @@ b.icon-user-info-notification {
     background-position: 0 0;
 }
 
+
 b.icon-user-info-notification span.notification-counter-container {
-    background: none repeat scroll 0 0 #DC220D;
-    border-radius: 20% 20% 20% 20%;
+    background: none repeat scroll 0 0 #D31E1E;
+    border: 2px solid #D5D5D5;
+    border-radius: 50% 50% 50% 50%;
     display: block;
     height: 19px;
     position: relative;
     right: -16px;
-    top: -14px;
+    top: -18px;
     width: 19px;
 }
-
 b.icon-user-info-notification span.notification-counter-container i.notification-counter-counter {
     color: #FFFFFF;
     float: right;
@@ -99,22 +100,23 @@ div#header div.header-container div.user-control-container button.user-info {
 /*Footer Design*/
 
 div#footer {
-    background: none repeat scroll 0 0 #747474;
+    background: url("images/canvas-dark.png") repeat scroll 0 0 transparent;
     height: 70px;
 }
 div#footer div.footer-container div.footer-content-wrapper {
     display: block;
 }
+
 div#footer div.footer-container div.footer-content-wrapper span {
     color: #FCFFFD;
     display: block;
     float: right;
     font-family: BYekan;
-    font-size: 34px;
+    font-size: 25px;
     padding: 7px;
     position: relative;
     text-shadow: 1px 1px 0 #000000;
-    top: 2px;
+    top: 5px;
 }
 /*Login Design*/
 div.login-container p {
@@ -160,4 +162,8 @@ div.login-container input[type="text"]:focus, div.login-container input[type="pa
     border-color: #4D913B;
 }
 
-
+/*template container*/
+div#content div.template-container
+{
+    
+}

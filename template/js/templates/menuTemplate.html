@@ -1,0 +1,53 @@
+﻿<div>
+    <div id="dc_jqmegamenu_widget-5-item">
+        <ul class="menu">
+            <li class="width-fixer"><a href="#" data-prop-text="Home"></a></li>
+            <li class="width-fixer"><a href="#" data-prop-text="Cartable"></a>
+                <ul>
+                    <li><a href="#" data-prop-text="Request"></a></li>
+                </ul>
+            </li>
+            <li class="width-fixer"><a href="#" data-prop-text="Storage"></a>
+                <ul>
+                    <li><a href="#" data-prop-text="ProductExport"></a>
+                        <ul>
+                            <li><a href="#" data-prop-text="ReportExport"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-prop-text="ProductImport"></a></li>
+                </ul>
+            </li>
+            <li class="width-fixer"><a href="#" data-prop-text="PM"></a>
+                <ul>
+                    <li><a href="#" data-prop-text="PmSubmit"></a></li>
+                </ul>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                textIntializer($(".menu *"));
+                setTimeout(function () {
+                    jQuery('.menu').dcMegaMenu({
+                        rowItems: 3,
+                        subMenuWidth: '175',
+                        speed: 'fast',
+                        effect: 'fade',
+                        event: 'hover'
+                    });
+                }, 10);
+                var colors = ["blue", "red" , "black" , "orange"];
+                jQuery(".menu li.width-fixer").hover(function () {
+                    if (!$(this).data("domNode")) {
+                        var className = colors[$(this).index()],
+                                domNode = $("<div class=" + className + "></div>").addClass("highlighter");
+                        $(this).append(domNode).data("domNode", $('.highlighter', this));
+                    }
+                    else
+                        $(this).append($(this).data("domNode"));
+                }, function () {
+                    $('.highlighter', this).remove();
+                })
+            });
+        </script>
+    </div>
+</div>

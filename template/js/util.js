@@ -35,8 +35,9 @@ var texts = {
         });
     };
     templateLoader("#header", 'js/templates/headerTemplate.html');
-    templateLoader("#content", 'js/templates/contentTemplate.html');
+    templateLoader("#menu", 'js/templates/menuTemplate.html');
     templateLoader("#footer", 'js/templates/footerTemplate.html');
+    templateLoader("#content", 'js/templates/contentTemplate.html');
     //*******************template Loader*************************//
 
 
