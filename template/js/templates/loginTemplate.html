@@ -1,19 +1,43 @@
 <div class="login-container">
     <p>
-        <label for="username" data-prop-text="Username"></label>
+        <label for="username" data-prop-text="Username">
+        </label>
         <input type="text" class="user-login-entry username" id="username">
     </p>
-
     <p>
-        <label for="password" data-prop-text="Password"></label>
+        <label for="password" data-prop-text="Password">
+        </label>
         <input type="password" class="user-login-entry password" id="password">
     </p>
-
     <p>
         <span class="login-button-puller"></span>
-        <button class="common-button" data-prop-text="Login"></button>
+        <button class="common-button login" data-prop-text="Login">
+        </button>
+        <span class="login-status"></span>
     </p>
     <script type="text/javascript">
-        textIntializer($(".login-container *"))
+        textIntializer($(".login-container *"));
+        $(".login").click(function () {
+            var username = $(".username").val(),
+                pass = $(".password").val();
+            if (username.length > 0 && pass.length > 0) {
+                queryParam = "username=" + username + "&pass=" + pass;
+
+                $.ajax("/92-02-14-Enayat/webserve/WebService.asmx/UserAuthentication?" + queryParam, {
+                    type: "POST",
+                    success: function (data, textStatus, jqXHR) {
+                        window.jqXHR = jqXHR
+                        if (jqXHR.responseXML.childNodes[0].innerHTML === "true")
+                            $(".login-status").text("Login was succeful")
+                        else
+                            $(".login-status").text("Login was unsucceful")
+                    },
+                    error: function (e) {
+                        $(".login-status").text("Error Happened")
+                    }
+
+                })
+            }
+        })
     </script>
 </div>
